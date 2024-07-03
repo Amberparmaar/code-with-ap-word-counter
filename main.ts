@@ -1,6 +1,8 @@
 #! /usr/bin/env node
-asyns function wordCounter(){
 import inquirer from "inquirer"
+
+asyns function wordCounter(){
+
 
 let userAns = await inquirer.prompt([
     {
