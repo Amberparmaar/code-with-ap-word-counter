@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-
+asyns function wordCounter(){
 import inquirer from "inquirer"
 
 let userAns = await inquirer.prompt([
@@ -10,8 +10,8 @@ let userAns = await inquirer.prompt([
 
     }
 ])
-let word_count = userAns.word.trim().split("").length
+let word_count = userAns.word.trim().split(/\s+/).length
 console.log(`Your Sentence has ${word_count} words`);
 
- 
- 
+}
+ wordCounter();
